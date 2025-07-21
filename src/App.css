@@ -1,1 +1,13 @@
 @import 'tailwindcss';
+
+@theme {
+  --color-primary: #680de4;
+  --color-secondary: #ebe7fc;
+  --color-background: #fbf9ff;
+  --color-card: #ffffff;
+  --text-dark: #13144d;
+}
+
+body {
+  font-family: 'Inter';
+}
