@@ -2,10 +2,12 @@
 
 @theme {
   --color-primary: #680de4;
+  --color-primary-dark: #4b0bb1;
   --color-secondary: #ebe7fc;
   --color-background: #fbf9ff;
   --color-card: #ffffff;
   --text-dark: #13144d;
+  --text-secondary: #ae70ff;
 }
 
 body {
