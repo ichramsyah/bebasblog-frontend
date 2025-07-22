@@ -15,6 +15,8 @@ export interface IUserProfile {
   email: string;
   bio?: string;
   image?: string;
+  profile_picture_url?: string;
+  createdAt?: string;
 }
 
 export interface IPost {

@@ -5,15 +5,25 @@ import LoginPage from './pages/LoginPage';
 import FeedPage from './pages/FeedPage';
 import AuthLayout from './layouts/AuthLayouts';
 import MainLayout from './layouts/MainLayout';
+import LandingLayout from './layouts/LandingLaout';
+import LandingPage from './pages/LandingPage';
 
-const LandingPage = () => <div>Landing Page</div>;
 const ProfilePage = () => <div>Profile Page</div>;
 
 function App() {
   return (
     <div className="bg-background text-text-dark min-h-screen">
       <Routes>
-        <Route path="/" element={<LandingPage />} />
+        {/* Landing */}
+        <Route
+          path="/"
+          element={
+            <LandingLayout>
+              <LandingPage />
+            </LandingLayout>
+          }
+        />
+
         {/* Main App Pages */}
         <Route
           path="/feed"

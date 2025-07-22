@@ -54,7 +54,7 @@ const LoginPage: React.FC = () => {
             <h1 className="text-2xl font-bold text-center text-text-dark mb-6">Sign in your account</h1>
 
             {/* Google Sign Up */}
-            <a href={`${BACKEND_URL}/api/auth/google`} className="w-full flex items-center justify-center border border-gray-900 rounded-lg hover:bg-black hover:text-white transition-all">
+            <a href={`${BACKEND_URL}/api/auth/google`} className="w-full flex items-center justify-center border border-gray-900 rounded-sm hover:bg-black hover:text-white transition-all">
               <img src={googleIcon} className="w-7 h-7 mr-2" alt="" />
               <span className="font-semibold py-2.5 text-base text-text-dark">Sign In With Google</span>
             </a>
