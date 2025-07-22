@@ -4,6 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { loginUser } from '../services/authService';
 import { useAuthStore } from '../store/authStore';
 import type { ILoginPayload } from '../types';
+import '../App.css';
 
 const googleIcon = 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/c1/Google_%22G%22_logo.svg/768px-Google_%22G%22_logo.svg.png';
 const BACKEND_URL = import.meta.env.VITE_BACKEND_URL || 'http://localhost:5000';
