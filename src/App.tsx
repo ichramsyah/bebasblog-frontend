@@ -1,11 +1,11 @@
 import { Routes, Route } from 'react-router-dom';
 import './App.css';
 import RegisterPage from './pages/RegisterPage';
+import LoginPage from './pages/LoginPage';
 
 const LandingPage = () => <div>Landing Page</div>;
 const FeedPage = () => <div>Feed Page</div>;
 const ProfilePage = () => <div>Profile Page</div>;
-const LoginPage = () => <div>Login Page</div>;
 
 function App() {
   return (
