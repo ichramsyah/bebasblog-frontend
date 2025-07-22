@@ -32,3 +32,13 @@ export interface IPost {
   comments: string[];
   createdAt: string;
 }
+
+export interface IPublicUserProfile {
+  _id: string;
+  username: string;
+  bio: string;
+  profile_picture_url: string;
+  createdAt: string;
+  postCount: number;
+  totalLikes: number;
+}
