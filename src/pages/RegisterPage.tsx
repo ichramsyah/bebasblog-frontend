@@ -44,15 +44,9 @@ const RegisterPage: React.FC = () => {
   };
 
   return (
-    <div className="bg-secondary">
-      <div className="pt-3 pl-6">
-        <Link to="/" className=" font-bold text-4xl text-text-dark">
-          Bebas<span className="text-[#AE70FF]">Blog</span>
-        </Link>
-      </div>
-
+    <div className="bg-background">
       <div className="flex items-center min-h-screen justify-center ">
-        <div className="w-full flex md:flex-nowrap flex-wrap-reverse max-w-5xl p-8 bg-card rounded-lg mb-[50px] mt-6">
+        <div className="w-full flex md:flex-nowrap flex-wrap-reverse max-w-5xl md:gap-0 gap-10 p-8 bg-card rounded-lg mb-[50px]">
           <div className="md:w-1/2 w-full flex items-center">
             <img src="/images/ilustration.png" className="w-full h-auto object-cover" alt="" />
           </div>
