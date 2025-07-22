@@ -1,6 +1,6 @@
 // src/components/Navbar.tsx
 import { Link, useNavigate } from 'react-router-dom';
-import { useAuthStore } from '../store/authStore'; // Pastikan importnya default atau named sesuai export Anda
+import { useAuthStore } from '../store/authStore';
 
 const NavbarMain = () => {
   const { user, logout } = useAuthStore((state) => ({
@@ -8,8 +8,7 @@ const NavbarMain = () => {
     logout: state.logout,
   }));
 
-  // Cek apakah user sudah login
-  const isLoggedIn = !!user; // Jika user object tidak null, berarti login
+  const isLoggedIn = !!user;
 
   const navigate = useNavigate();
 
@@ -19,8 +18,7 @@ const NavbarMain = () => {
   };
 
   return (
-    <nav className="fixed w-full backdrop-blur-[20px] bg-white/70 z-30">
-      {' '}
+    <nav className="fixed w-full backdrop-blur-[20px] bg-white/20 z-30">
       {/* Tambahkan z-50 agar navbar selalu di atas */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
@@ -35,7 +33,7 @@ const NavbarMain = () => {
                 <Link to="/feed" className="text-text-dark hover:text-primary px-3 py-2 rounded-md text-sm font-medium transition-all">
                   Feed
                 </Link>
-                <Link to="/post/create" className="text-primary bg-secondary hover:bg-primary hover:text-white px-3 py-2 rounded-sm text-sm font-medium transition-all">
+                <Link to="/create-post" className="text-primary bg-secondary hover:bg-primary hover:text-white px-3 py-2 rounded-sm text-sm font-medium transition-all">
                   + Create Post
                 </Link>
                 {/* Ganti teks "Profil" dengan gambar profil */}

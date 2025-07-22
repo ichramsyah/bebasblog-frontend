@@ -7,8 +7,9 @@ import AuthLayout from './layouts/AuthLayouts';
 import MainLayout from './layouts/MainLayout';
 import LandingLayout from './layouts/LandingLaout';
 import LandingPage from './pages/LandingPage';
-
-const ProfilePage = () => <div>Profile Page</div>;
+import ProfilePage from './pages/ProfilePage';
+import ProtectedRoute from './components/ProtectedRoute';
+import CreatePostPage from './pages/CreatePostPage';
 
 function App() {
   return (
@@ -39,6 +40,17 @@ function App() {
             <MainLayout>
               <ProfilePage />
             </MainLayout>
+          }
+        />
+        {/* Create Post */}
+        <Route
+          path="/create-post"
+          element={
+            <ProtectedRoute>
+              <MainLayout>
+                <CreatePostPage />
+              </MainLayout>
+            </ProtectedRoute>
           }
         />
 
