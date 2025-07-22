@@ -16,3 +16,17 @@ export interface IUserProfile {
   bio?: string;
   image?: string;
 }
+
+export interface IPost {
+  _id: string;
+  user: {
+    _id: string;
+    username: string;
+    profile_picture_url: string;
+  };
+  images: string[];
+  description: string;
+  likes: string[];
+  comments: string[];
+  createdAt: string;
+}
