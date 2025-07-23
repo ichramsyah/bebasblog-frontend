@@ -6,6 +6,7 @@
   --color-secondary: #ebe7fc;
   --color-background: #fbf9ff;
   --color-card: #ffffff;
+  --color-h1: #13144d;
   --text-dark: #13144d;
   --text-secondary: #ae70ff;
 }
@@ -13,4 +14,8 @@
 body {
   font-family: 'Inter';
   margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
