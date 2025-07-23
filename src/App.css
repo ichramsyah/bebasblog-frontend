@@ -19,3 +19,55 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee-2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.marquee-container {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.marquee-content {
+  display: flex;
+}
+
+.marquee-left {
+  animation: marquee 30s linear infinite;
+}
+
+/* Animasi untuk marquee kedua (ke kanan) */
+.marquee-right {
+  animation: marquee-2 30s linear infinite;
+}
+
+@media (max-width: 480px) {
+  .marquee-left {
+    animation: marquee 7s linear infinite; /* Lebih cepat di mobile */
+  }
+  .marquee-right {
+    animation: marquee-2 7s linear infinite; /* Lebih cepat di mobile */
+  }
+
+  /* Sesuaikan lebar kartu di mobile jika Anda menghapus mx-4 */
+  .flex-shrink-0.w-\[350px\] {
+    width: 80vw; /* Agar kartu lebih proporsional di mobile */
+    /* Hapus mx-4 jika Anda menggunakan gap pada .marquee-content */
+  }
+}
