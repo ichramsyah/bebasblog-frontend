@@ -64,7 +64,7 @@ const FeedPage = () => {
   if (error) return <div className="text-center mt-10 text-red-500">{error}</div>;
 
   return (
-    <div className="max-w-2xl mx-auto py-8">
+    <div className="max-w-2xl mx-auto py-8 mt-10">
       <h1 className="text-3xl font-bold text-text-dark mb-6">Feed</h1>
       {posts.map((post) => (
         <PostCard

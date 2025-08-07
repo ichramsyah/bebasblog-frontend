@@ -39,7 +39,7 @@ const ProfilePage = () => {
   if (!profile) return <div className="text-center mt-10">Profil tidak ditemukan.</div>;
 
   return (
-    <div className="max-w-4xl mx-auto py-8 px-4">
+    <div className="max-w-4xl mx-auto py-8 px-4 mt-20">
       {/* Header Profil */}
       <div className="flex flex-col md:flex-row items-center md:items-start text-center md:text-left mb-10">
         <img src={profile.profile_picture_url} alt={profile.username} className="w-40 h-40 rounded-full object-cover border-4 border-card shadow-lg mb-4 md:mb-0 md:mr-10" />
