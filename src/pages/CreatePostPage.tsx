@@ -42,7 +42,7 @@ const CreatePostPage: React.FC = () => {
   };
 
   return (
-    <div className="max-w-2xl mx-auto py-8 px-4">
+    <div className="max-w-2xl mx-auto py-8 px-4 mt-20">
       <h1 className="text-3xl font-bold text-text-dark mb-6">Buat Postingan Baru</h1>
       <form onSubmit={handleSubmit} className="space-y-6 bg-card p-6 rounded-lg shadow-md">
         <div>
@@ -61,7 +61,7 @@ const CreatePostPage: React.FC = () => {
         </div>
         <div>
           <label htmlFor="images" className="block text-sm font-medium text-gray-700">
-            Gambar (bisa lebih dari satu)
+            Gambar
           </label>
           <input
             type="file"
